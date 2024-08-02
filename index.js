@@ -7,4 +7,5 @@ app.get('/about',(req,res)=>{
     res.send('hello about section');
     res.end()
 })
-app.listen(4000,()=>console.log(`serveer is running at ${4000}`))
+const PORT = process.env.PORT || 3000
+app.listen(PORT,()=>console.log(`serveer is running at ${4000}`))
